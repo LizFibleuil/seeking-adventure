@@ -1,0 +1,72 @@
+/*font-family: 'Advent Pro', sans-serif;
+      font-family: 'Work Sans', sans-serif;*/
+.App {
+  text-align: center;
+  background-color: rgba(227, 143, 107,0.7);
+  font-family: 'Work Sans', sans-serif;
+}
+.Page-Welcome {
+  text-align: center;
+  height:42px;
+}
+.Page-Welcome p {
+  padding-top:10px;
+}
+.App-header {
+  background-image: url('./Cover-Image.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align:center;
+  height: 450px;
+}
+.App-header h1 {
+  font-size:6em;
+  font-weight:700;
+  color:white;
+  opacity:0.7;
+  font-family: 'Advent Pro', sans-serif;
+}
+.App-header p {
+  background-color: rgba(255,255,255,0.7);
+  font-size:1.0em;
+  border-radius: 15px;
+  padding:20px;
+  width:90vw;
+  margin:28px auto;
+}
+.logo {
+  margin-top:20px;
+  width:10vw;
+}
+/*Header Media Queries */
+@media only screen and (max-width:768px){
+  .logo {
+    width:15vw;
+  }
+  .App-header {
+    height:550px;
+  }
+  .App-header h1 {
+    font-size:5.5em;
+  }
+  .App-header p {
+    font-size:1em;
+  }
+}
+@media only screen and (max-width:500px){
+  .App-header {
+    height:650px;
+  }
+}
+/*Map Select Component */
+/*.map-select {
+  margin:30px auto;
+}
+/*@media only screen and (min-width:1000px){
+  .map-select {
+    top:-150px;
+    background-color: rgba(255,255,255,0.9);
+  }
+}*/

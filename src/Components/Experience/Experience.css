@@ -1,0 +1,212 @@
+html,body {
+    --main-color: #824940;
+    --reset-color: #502923;
+    --clicked-color: #B08B53;
+  }
+  /*Entire Div */
+/*.experience-select-div {
+  border:1px solid red;
+}*/
+/* Section Header*/
+.step-title {
+    text-align: center;
+    background: var(--reset-color);
+    color:white;
+    padding-top:5px;
+    padding-bottom:5px;
+    text-transform: uppercase;
+  }
+  .step-title h3 {
+    font-size:1.5em;
+    font-weight: 300;
+  }
+  .component-title {
+    font-family: 'Advent Pro', sans-serif;
+    text-align: center;
+    background: var(--main-color);
+    color:white;
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+  .component-title h2 {
+    font-size:2.1em;
+    font-weight: 500;
+  }
+  @media only screen and (max-width:500px){
+    .step-title h3 {
+      font-size:1em;
+    }
+    .component-title h2 {
+      font-size:1.7em;
+      font-weight: 500;
+    }
+  }
+  /* Continents Buttons Section*/
+.Experience_Search {
+    /*border:1px solid green;*/
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-bottom:20px;
+    text-align:center;
+  }
+  .Experience_Search p {
+    padding:30px 10px;
+  }
+  .Form_Experiences {
+    width:100%;
+    /*border:1px solid pink;*/
+    padding:0;
+  }
+  .List_Experiences {
+    /*border:1px solid blue;*/
+    width:100vw;
+    height:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+    .List_Experiences li {
+    /*border: 1px solid pink;*/
+      display:inline-block;
+      /*margin-left: 5px;
+      margin-right: 5px;*/
+      /*min-width: 15%;*/
+      height: 200px;
+      position: relative;
+    
+      
+    }
+    .List_Experiences input {
+      display: block;
+      position: relative;
+      top: 20px;
+      left: 5px;
+      right: 0;
+      bottom: 0;
+    }
+    .List_Experiences label{
+      display: block;
+      position: relative;
+      top: -10px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height:50px;
+      padding-top: 15px;
+      border: 1.7px solid var(--main-color);
+      font-size: 0.75em;
+      color: var(--main-color);
+      background-color: white;
+      text-transform: uppercase;
+      border-radius:10px;
+      cursor: pointer;
+      z-index: 90;
+      text-align: center;
+    }
+    .List_Icon {
+        /*border:1px solid red;*/
+        fill:var(--main-color);
+        width:120px;
+        height:100px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .icon path {
+        fill:var(--main-color); 
+    }
+     /* Media Queries of Inputs */
+     /*@media only screen and (max-width:900px){
+      .List_Experiences li {
+        min-width: 30%;
+      }
+     }
+     @media only screen and (max-width:468px){
+      .List_Experiences li {
+        min-width: 45%;
+      }
+     }*/
+   /* Clicked State */
+    .active {
+      background: var(--clicked-color) !important;
+    }
+    .active-icon path{
+        fill:var(--clicked-color) !important;  
+      }
+     /* Submit and Reset Buttons */
+    .input-button {
+        text-align: center;
+    }
+   #btn_submit {
+       background:var(--main-color);
+       color:white;
+       border:1px solid var(--main-color);
+       border-radius: 13px;
+       cursor: pointer;
+       font-size: 0.75em;
+      /*box-shadow: 2px 2px 2px black;*/
+      padding:15px;
+       text-transform: uppercase;
+       margin:15px 30%;
+       outline:none;
+   }
+   #btn_submit:hover {
+       opacity: 0.5;
+   }
+   #btn_reset {
+    background:var(--reset-color);
+    color:white;
+    border:1px solid var(--reset-color);
+    border-radius: 13px;
+    cursor: pointer;
+    font-size: 0.75em;
+   /*box-shadow: 2px 2px 2px black;*/
+   padding:8px;
+    text-transform: uppercase;
+    margin:0px 30%;
+    outline:none;
+   }
+   #disp p{
+      margin-top:15px;
+      padding:0px;
+      font-size: 1em;
+      font-weight:500;  
+   }
+   #disp span {
+    color:var(--main-color);
+   }
+   /* Hovering Classes for Inputs and Maps*/
+  .HistoricHover {
+    background-color:#FDD477 !important;
+    transition: 0.6s background-color;
+  }
+  .HistoricIconHover path{
+    fill:#FDD477 !important;
+    transition: 0.6s fill;
+  }
+  .ArchitecturalHover {
+    background-color:#E3B26B !important;
+    transition: 0.6s background-color;
+  }
+  .ArchitecturalIconHover path{
+    fill:#E3B26B !important;
+    transition: 0.6s fill;
+  }
+  .RelaxingHover {
+    background-color:#FAB983 !important;
+    transition: 0.6s background-color;
+  }
+  .RelaxingIconHover path{
+    fill:#FAB983 !important;
+    transition: 0.6s fill;
+  }
+  .ScenicHover {
+    background-color:#E38F6B !important;
+    transition: 0.6s background-color;
+  }
+  .ScenicIconHover path{
+    fill:#E38F6B !important;
+    transition: 0.6s fill;
+  }
+  

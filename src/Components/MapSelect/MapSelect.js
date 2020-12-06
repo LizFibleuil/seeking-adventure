@@ -48,7 +48,7 @@ class MapSelect extends React.Component {
             <div className='Continent_Search'>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl pretium fusce id velit ut. Integer vitae justo eget magna fermentum. Tristique nulla aliquet enim tortor. </p>
                 <form className="Form_Continents" onClick={this.chooseContinentInput}>
-                    <ul class='List_Continents' id='List_Continents'>
+                    <ul className='List_Continents' id='List_Continents'>
                         <li>
                             <input type="radio" name="continents" value="NorthAmerica" id="Btn_North" className='input-test'/> 
                             <label onClick={()=>this.handleClickState('North')} onMouseEnter={()=>this.handleMouseEnter('North')} onMouseLeave={this.handleMouseLeave}for="Btn_North" id="L_North_America" className={`${this.state.clickState ==='North'? "active" : ""} NorthAmerica${this.state.hoverState ==='North'? "Hover" : ""}`}>North America</label>

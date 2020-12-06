@@ -1,0 +1,253 @@
+html,body {
+    --main-color: #824940;
+    --reset-color: #502923;
+    --clicked-color: #B08B53;
+    --city-color:#E38F6B;
+    --city-list-color:rgba(227, 143, 107,0.4);
+    --city-list-select:rgba(130, 73, 64,0.3);
+    --weather-color:rgb(235, 193, 175);
+    --next-step-color:#E38F6B ;
+    --next-step-color-dark:rgb(172, 108, 81) ;
+    --next-step-color-2:#FAB983 ;
+  }
+/* Section Header*/
+.step-title-v2 {
+    text-align: center;
+    background: var(--next-step-color-dark);
+    color:white;
+    padding-top:5px;
+    padding-bottom:5px;
+    text-transform: uppercase;
+  }
+  .step-title-v2 h3 {
+    font-size:1.5em;
+    font-weight: 300;
+  }
+  .component-title-v2 {
+    font-family: 'Advent Pro', sans-serif;
+    text-align: center;
+    background: var(--next-step-color);
+    color:white;
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+  .component-title-v2 h2 {
+    font-size:2.1em;
+    font-weight: 500;
+  }
+  @media only screen and (max-width:500px){
+    .step-title-v2 h3 {
+      font-size:1em;
+    }
+    .component-title-v2 h2 {
+      font-size:1.7em;
+      font-weight: 500;
+    }
+  }
+   /*Decision Section*/
+   .Decision_Select {
+    /*border:1px solid green;*/
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-bottom:20px;
+    text-align:center;
+  }
+  .Decision_Select p {
+    padding:15px 10px;
+  }
+  #disp-decision {
+    text-align:center;
+  }
+  #disp-decision p{
+    font-family: 'Advent Pro', sans-serif;
+    margin-top:15px;
+    padding:0px;
+    font-size:2.1em;
+    font-weight: 700;  
+ }
+  #disp-decision span {
+  color:var(--next-step-color);
+ }
+.Form_Decision {
+    width:100%;
+    /*border:1px solid pink;*/
+    padding:0;
+  }
+.List_Decision {
+    /*border:1px solid blue;*/
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+.List_Decision li {
+      display:inline-block;
+      /*margin-left: 5px;
+      margin-right: 5px;*/
+      min-width: 22%;
+      height: 50px;
+      position: relative;
+      
+    }
+.List_Decision input {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 5px;
+      right: 0;
+      bottom: 0;
+    }
+.List_Decision label{
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding-top: 10px;
+      border: 1.7px solid var(--main-color);
+      font-size: 0.75em;
+      color: var(--main-color);
+      background-color: white;
+      text-transform: uppercase;
+      border-radius:10px;
+      cursor: pointer;
+      z-index: 90;
+      text-align: center;
+    }
+.List_Decision label:hover {
+    background-color:var(--next-step-color-2);
+    color:black;
+}
+.active-decision {
+    background-color:var(--next-step-color-dark) !important;
+    border: 1.7px solid var(--next-step-color-dark) !important;
+    color:white !important;
+}
+/* Media Queries of Inputs */
+@media only screen and (max-width:900px){
+.List_Decision li {
+        min-width: 48%;
+      }
+     }
+@media only screen and (max-width:468px){
+.List_Decision li {
+        min-width: 75%;
+      }
+     }
+#btn_decisions {
+        background:var(--main-color);
+        color:white;
+        border:1px solid var(--main-color);
+        border-radius: 13px;
+        cursor: pointer;
+        font-size: 0.75em;
+       /*box-shadow: 2px 2px 2px black;*/
+       padding:15px;
+        text-transform: uppercase;
+        margin:15px 30%;
+        outline:none;
+}
+#btn_decisions:hover {
+        opacity: 0.5;
+}
+.pack {
+    font-family: 'Advent Pro', sans-serif;
+    margin-top:15px;
+    padding:0px;
+    font-size:1.5em;
+    font-weight: 700; 
+}
+.pack span {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+.region-map {
+    justify-content: center;
+    border: 5px solid var(--main-color);
+    border-radius:10px;
+    padding:10px 20px;
+    color:var(--reset-color);
+    font-family: 'Advent Pro', sans-serif;
+    font-size:2em;
+    font-weight: 700; 
+    transform-box: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    height:auto;
+}
+.region-map path {
+    fill:var(--main-color);
+}
+/*Links List */
+.List_Links {
+    /*border:1px solid blue;*/
+    width:100vw;
+    height:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  .List_Links li {
+    padding: 10px 15px;
+    margin:10px;
+    border: 1.7px solid var(--next-step-color-2);
+    background-color: var(--next-step-color-2);
+    font-size: 0.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius:10px;
+    width: 20%;
+    height: 40px;
+    position: relative; 
+  }
+  .List_Links li a {
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    color:black;
+  }
+  .List_Links li a:hover {
+    color: var(--next-step-color-dark);
+  }
+
+  /* Media Queries of Inputs */
+  @media only screen and (max-width:900px){
+    .List_Links li {
+      min-width: 30%;
+    }
+   }
+   @media only screen and (max-width:468px){
+    .List_Links li {
+      min-width: 40%;
+    }
+   }
+
+.final-text {
+    font-family: 'Advent Pro', sans-serif;
+    font-size:3em;
+    font-weight: 700;
+    text-decoration: underline;
+    color:var(--main-color); 
+}
+  /* Reset Button */
+  #btn_reset-all {
+    background:var(--next-step-color-2);
+    color:black;
+    border:1px solid var(--next-step-color-2);
+    border-radius: 13px;
+    cursor: pointer;
+    font-size: 0.75em;
+    padding:8px;
+    text-transform: uppercase;
+    margin:0px 30%;
+    outline:none;
+  }
+  #btn_reset-all:hover {
+    opacity: 0.5;
+  }

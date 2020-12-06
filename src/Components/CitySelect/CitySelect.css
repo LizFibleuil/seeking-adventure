@@ -1,0 +1,213 @@
+html,body {
+    --main-color: #824940;
+    --reset-color: #502923;
+    --clicked-color: #B08B53;
+    --city-color:#E38F6B;
+    --city-list-color:rgba(227, 143, 107,0.4);
+    --city-list-select:rgba(130, 73, 64,0.3);
+    --weather-color:rgb(235, 193, 175);
+    --next-step-color:#E38F6B ;
+    --next-step-color-2:#FAB983 ;
+  }
+  /*Entire Div */
+/*.city-select-div {
+  border:1px solid red;
+}*/
+/* Section Header*/
+.step-title {
+    text-align: center;
+    background: var(--reset-color);
+    color:white;
+    padding-top:5px;
+    padding-bottom:5px;
+    text-transform: uppercase;
+  }
+  .step-title h3 {
+    font-size:1.5em;
+    font-weight: 300;
+  }
+  .component-title {
+    font-family: 'Advent Pro', sans-serif;
+    text-align: center;
+    background: var(--main-color);
+    color:white;
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+  .component-title h2 {
+    font-size:2.1em;
+    font-weight: 500;
+  }
+  @media only screen and (max-width:500px){
+    .step-title h3 {
+      font-size:1em;
+    }
+    .component-title h2 {
+      font-size:1.7em;
+      font-weight: 500;
+    }
+  }
+/*City List Section*/
+  .City_Select {
+    /*border:1px solid green;*/
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-bottom:20px;
+    text-align:center;
+  }
+  .City_Select p {
+    padding:15px 10px;
+  }
+  .List_Cities {
+    /*border:1px solid blue;*/
+    width:100vw;
+    height:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  .List_Cities li {
+    padding: 10px 15px;
+    margin:10px;
+    border: 1.7px solid var(--city-color);
+    background-color: var(--city-color);
+    font-size: 0.75em;
+    text-transform: uppercase;
+    border-radius:10px;
+    width: 15%;
+    height: 40px;
+    position: relative; 
+  }
+  /* Media Queries of Inputs */
+  @media only screen and (max-width:900px){
+    .List_Cities li {
+      min-width: 30%;
+    }
+   }
+   @media only screen and (max-width:468px){
+    .List_Cities li {
+      min-width: 40%;
+    }
+   }
+
+   .weather-select {
+     border:1px solid var(--city-color);
+     border-top-left-radius: 15px;
+     border-top-right-radius: 15px;
+     border-bottom: 10px solid var(--city-color);
+     width:75vw;
+     margin-left:auto;
+     margin-right:auto;
+     text-align:center;
+     background-color:var(--weather-color);
+     margin-bottom:25px;
+     padding-bottom:30px;
+   }
+   .weather-select h2 {
+    font-family: 'Advent Pro', sans-serif;
+    padding:20px;
+    font-size:1.7em;
+    font-weight: 600;
+    text-decoration: underline;
+   }
+   .selectList {
+    font-size: 16px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 50%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid var(--city-color);
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--city-list-color);
+   }
+   .selectList:hover {
+    border: 2px solid var(--main-color);
+  }
+  .selectList:focus {
+    box-shadow: 0 0 1px 3px var(--city-list-select);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+  }
+  .weather {
+    border:1px solid var(--city-color);
+    border-top: 10px solid var(--city-color);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width:75vw;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    background-color:var(--weather-color);
+    margin-bottom:25px;
+  }
+  .weather h2 {
+    font-family: 'Advent Pro', sans-serif;
+    padding:20px;
+    font-size:1.7em;
+    font-weight: 700;
+   }
+#p-select-city {
+  font-weight: 700;
+  padding-bottom:0;
+  margin-bottom:0;
+}
+#p-select-city span {
+  color:var(--next-step-color);
+  text-decoration:underline;
+ }
+#btn_select {
+   background:var(--next-step-color);
+   color:black;
+   border:1px solid var(--next-step-color);
+   border-radius: 13px;
+   cursor: pointer;
+   font-size: 0.75em;
+  /*box-shadow: 2px 2px 2px black;*/
+  padding:15px;
+   text-transform: uppercase;
+   margin:15px 30%;
+   outline:none;
+}
+#btn_select:hover {
+   opacity: 0.5;
+}
+#btn_reset-select {
+  background:var(--next-step-color-2);
+  color:black;
+  border:1px solid var(--next-step-color-2);
+  border-radius: 13px;
+  cursor: pointer;
+  font-size: 0.75em;
+  padding:8px;
+  text-transform: uppercase;
+  margin:0px 30%;
+  outline:none;
+}
+#btn_reset-select:hover {
+  opacity: 0.5;
+}
+  #disp-city {
+    text-align:center;
+  }
+  #disp-city p{
+    font-family: 'Advent Pro', sans-serif;
+    margin-top:15px;
+    padding:0px;
+    font-size:2.1em;
+    font-weight: 700;  
+ }
+  #disp-city span {
+  color:var(--next-step-color);
+ }

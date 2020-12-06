@@ -3,12 +3,24 @@ var Cities = require('../models/cities');
 
 var citiesRouter = express.Router();
 
-citiesRouter.get('/',(req,res) => {
-    Cities.getAll((err,cities) => {
+citiesRouter.get('/:continent/:typeOfExperience',(req,res) => {
+    var continent = req.params.continent;
+    var typeOfExperience = req.params.typeOfExperience;
+    Cities.getAll(continent,typeOfExperience,(err,cities) => {
         if(err){
             return res.json(err);
         }
         return res.json(cities);
+    });
+});
+
+citiesRouter.get('/:cityName',(req,res) => {
+    var cityName = req.params.cityName;
+    Cities.getPlaces(cityName,(err,places) => {
+        if(err){
+            return res.json(err);
+        }
+        return res.json(places);
     });
 });
 

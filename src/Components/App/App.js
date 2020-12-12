@@ -150,7 +150,7 @@ class App extends React.Component{
           <div className="App-header">
             <img src={Logo} className='logo' alt="Seeking Adventure Logo" />
             <h1>Seeking Adventure</h1>
-            <p>Have you ever found yourself wanting to travel the world, but have no idea where to go or what to do? Well, we are here to help! Below you will find a series of questions that will help you narrow down what your next adventure will be! <br></br>Let's Get Started!</p>
+            <p>Have you ever found yourself wanting to travel the world, but have no idea where to go or what to do? Well, we are here to help! Below, you will find a series of questions that will help you narrow down what your next adventure will be! <br></br>Let's Get Started!</p>
           </div>
         </header>
         <body className='container-fluid'>

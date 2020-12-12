@@ -87,9 +87,9 @@ class Decision extends React.Component {
                             <p className='pack'>Let's start booking flights and do some research. See below for some helpful links:</p>
                             <div>
                                 <ul className='List_Links'>
-                                    <li><a href='https://www.kayak.com/' target="_blank" rel="noopener noreferrer">Kayak - Booking Site</a></li>
-                                    <li><a href='https://www.tripadvisor.com/' target="_blank" rel="noopener noreferrer">Trip Advisor - Research Site</a></li>
-                                    <li><a href='https://www.expedia.com/' target="_blank" rel="noopener noreferrer">Expedia - Planning Site</a></li>
+                                    <li><a href='https://www.kayak.com/' target="_blank" rel="noopener noreferrer">Kayak - Booking</a></li>
+                                    <li><a href='https://www.tripadvisor.com/' target="_blank" rel="noopener noreferrer">Trip Advisor - Research</a></li>
+                                    <li><a href='https://www.expedia.com/' target="_blank" rel="noopener noreferrer">Expedia - Planning</a></li>
                                 </ul>
                             </div>
                             <p className='final-text'>Happy Travels!</p>

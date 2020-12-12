@@ -46,7 +46,7 @@ class MapSelect extends React.Component {
                     <h2>Which region would you like to visit?</h2>
             </div>
             <div className='Continent_Search'>
-                <p>The first step in our journey is to decide which region of the world you are more curious about. Below you will see the world map and the names of the regions associated with each continent. Select where you like to go from the buttons below.</p>
+                <p>The first step in your journey is to decide which region of the world you are more curious about. Below you will see the world map and the names of the regions associated with each continent. Select where you like to go from the buttons below.</p>
                 <form className="Form_Continents" onClick={this.chooseContinentInput}>
                     <ul className='List_Continents' id='List_Continents'>
                         <li>

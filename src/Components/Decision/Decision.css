@@ -202,7 +202,7 @@ html,body {
     font-weight: 700;
     text-transform: uppercase;
     border-radius:10px;
-    width: 20%;
+    width: 30%;
     height: 40px;
     position: relative; 
   }
@@ -222,9 +222,14 @@ html,body {
       min-width: 30%;
     }
    }
+   @media only screen and (max-width:750px){
+    .List_Links li {
+      min-width: 45%;
+    }
+   }
    @media only screen and (max-width:468px){
     .List_Links li {
-      min-width: 40%;
+      min-width: 80%;
     }
    }
 

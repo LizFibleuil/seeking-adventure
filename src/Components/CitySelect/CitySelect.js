@@ -35,7 +35,7 @@ class CitySelect extends React.Component {
                         <h2>To which city would you like to go to?</h2>
                 </div>
                 <div className='City_Select'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl pretium fusce id velit ut. Integer vitae justo eget magna fermentum. Tristique nulla aliquet enim tortor. </p>
+                    <p>You have selected both your region and the experience you are looking for. There so many cities around the world that can provide you with that! See below some of different cities that you could visit that would guarantee what you are looking for. Once you see the list of cities, see below if you like the current weather in there. If you like the city’s weather, then follow along in your journey!</p>
                     <button className="input-button"  id="btn_submit" onClick={this.handleClick} >Show Cities to Explore</button>
                     {this.props.cityList && <ul className='List_Cities'>{this.props.cityList.map((city,i) => <li key={i}>{city}</li>)}</ul>}
                 </div>

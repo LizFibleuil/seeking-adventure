@@ -27,11 +27,11 @@ class App extends React.Component{
     super(props);
     this.state = {
       //These are the continent results that are selected
-      continents: 'Asia',
-      typeOfExperience: 'Historic',
+      continents: '',
+      typeOfExperience: '',
       weather: null,
       cityList: [],
-      cityName: 'Kyoto',
+      cityName: '',
       placesList:[],
       placesDescription:[],
       placesComplete: [],
@@ -150,7 +150,7 @@ class App extends React.Component{
           <div className="App-header">
             <img src={Logo} className='logo' alt="Seeking Adventure Logo" />
             <h1>Seeking Adventure</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet facilisis magna etiam tempor. Sit amet volutpat consequat mauris. Egestas purus viverra accumsan in. Eu non diam phasellus vestibulum lorem sed risus ultricies. Amet justo donec enim diam vulputate ut. </p>
+            <p>Have you ever found yourself wanting to travel the world, but have no idea where to go or what to do? Well, we are here to help! Below you will find a series of questions that will help you narrow down what your next adventure will be! <br></br>Let's Get Started!</p>
           </div>
         </header>
         <body className='container-fluid'>

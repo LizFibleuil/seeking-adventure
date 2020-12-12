@@ -24,7 +24,7 @@ class Places extends React.Component {
                     <h2>Which places can you visit around that city?</h2>
                 </div>
                 <div className='Places_Select'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl pretium fusce id velit ut. Integer vitae justo eget magna fermentum. Tristique nulla aliquet enim tortor. </p>
+                    <p>Alright! You have selected the city where you will start your next adventure. Visiting a different city in the world is fun, but don’t you want to know what type of places you can visit from there? That may reinforce your curiosity, but it can also make you rethink your selection. See below what places can be visited from there.</p>
                     <button className="input-button-v2"  id="btn_submit-v2" onClick={this.handleClick} >Show the Places to Explore</button>
                     {this.props.placesComplete && <ul className='List_Places'>{this.props.placesComplete.map((place,i) => <li key={i}>{place[0]}<p>{place[1]}</p></li>)}</ul>}
                 </div>

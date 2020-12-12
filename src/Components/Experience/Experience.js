@@ -47,7 +47,7 @@ class Experience extends React.Component {
                         <h2>What type of Experience would you like to have?</h2>
                 </div>
                 <div className='Experience_Search'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl pretium fusce id velit ut. Integer vitae justo eget magna fermentum. Tristique nulla aliquet enim tortor. </p>
+                    <p>Now, let’s select what type of experience you would like to have in that region of the world. Are you looking for something scenic or a place to relax? Perhaps, you are looking for something to marvel about or get immersed in history. Select your interest from the buttons below. </p>
                     <form className="Form_Experiences" onClick={this.chooseExperienceInput}>
                         <ul className='List_Experiences row' id='List_Experiences'>
                             <li className='col-6 col-md-3'>

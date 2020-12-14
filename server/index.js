@@ -17,6 +17,13 @@ app.use(bodyParser.json());
 app.use('/api/cities',citiesRouter);
 app.use('/api/weather',weatherRouter);
 
+if (ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../build')));
+  app.use((req, res) => {
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+  });
+}
+
 app.listen(PORT,() => {
     console.log(`Server is listening on port ${PORT}!`);
 });

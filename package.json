@@ -31,7 +31,7 @@
     "dev": "concurrently \"npm run server\" \"npm run start-react\"",
     "seeking-adventure": "npm start-react",
     "server": "nodemon server",
-    "start": "node server",
+    "start": "concurrently \"npm run start-react\" \"node server\"",
     "heroku-postbuild": "npm install & npm run build"
   },
   "eslintConfig": {

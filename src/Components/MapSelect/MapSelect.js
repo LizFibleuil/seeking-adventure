@@ -15,6 +15,7 @@ class MapSelect extends React.Component {
         this.handleMouseLeave = this.handleMouseLeave.bind(this);
         this.handleClick = this.handleClick.bind(this);
         this.handleClickReset = this.handleClickReset.bind(this);
+        this.handleClickNext = this.handleClickNext.bind(this);
         this.chooseContinentInput = this.chooseContinentInput.bind(this);
     }
     handleClickState(id){
@@ -35,6 +36,11 @@ class MapSelect extends React.Component {
     }
     handleClickReset(){
         this.props.chooseContinent('');
+    }
+    handleClickNext(){
+        window.scrollTo({
+            top: 1540,  
+          });
     }
     render(){
         return (
@@ -80,7 +86,8 @@ class MapSelect extends React.Component {
                 <button className="input-button"  id="btn_reset"
                 onClick={this.handleClickReset} >Reset</button>
                 <div id="disp" >
-                    {this.props.selectedContinent && <p>You selected <span>{this.props.selectedContinent}</span> as your destination!</p>}
+                    {this.props.selectedContinent && (<div><p>You selected <span>{this.props.selectedContinent}</span> as your destination!</p><button className="next-button"  id="btn_next"
+                onClick={this.handleClickNext} >Next Step</button></div>)}
                 </div>
             </div> 
 

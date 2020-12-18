@@ -1,8 +1,7 @@
 var {Pool} = require('pg');
 
 const CONNECTION_STRING = process.env.DATABASE_URL || 'postgresql://postgres:Tropazole00.@localhost:5432/seeking-adventure-weather-db';
-const SSL = {rejectUnauthorized: false
-  /*process.env.NODE_ENV === 'production'*/};
+const SSL = {rejectUnauthorized: false} /*|| process.env.NODE_ENV === 'production'*/;
 
 class Database {
     constructor(){

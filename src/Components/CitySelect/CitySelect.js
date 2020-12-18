@@ -10,6 +10,7 @@ class CitySelect extends React.Component {
         this.handleChangeCity = this.handleChangeCity.bind(this);
         this.handleSelectCity = this.handleSelectCity.bind(this);
         this.handleClickReset = this.handleClickReset.bind(this);
+        this.handleClickNext = this.handleClickNext.bind(this);
     }
     handleClick(){
         this.props.getCities();
@@ -24,6 +25,11 @@ class CitySelect extends React.Component {
     handleClickReset(){
         this.props.chooseCity('');
         this.props.resetPlaces();
+    }
+    handleClickNext(){
+        window.scrollBy({
+            top: 350,  
+          });
     }
     render(){
         return (
@@ -57,7 +63,8 @@ class CitySelect extends React.Component {
                 </div>
                 }            
                 <div id="disp-city" >
-                        {this.props.selectedCity && <p>You have selected <span>{this.props.selectedCity}</span> as your destination!</p>}
+                        {this.props.selectedCity && (<div><p>You have selected <span>{this.props.selectedCity}</span> as your destination!</p><button className="next-button"  id="btn_next"
+                onClick={this.handleClickNext} >Next Step</button></div>)}
                     </div>
             </div>
         );

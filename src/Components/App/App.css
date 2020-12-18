@@ -4,6 +4,7 @@ html,body {
   --main-color: #824940;
   --reset-color: #502923;
   --clicked-color: #B08B53;
+  scroll-behavior: smooth;
 }
 .App {
   text-align: center;

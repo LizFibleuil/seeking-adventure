@@ -2,6 +2,7 @@ html,body {
   --main-color: #824940;
   --reset-color: #502923;
   --clicked-color: #B08B53;
+  --submit-color: #ca4b37;
 }
 
 /*Entire Div */
@@ -126,9 +127,9 @@ html,body {
       text-align: center;
   }
  #btn_submit {
-     background:var(--main-color);
+     background:var(--submit-color) !important;
      color:white;
-     border:1px solid var(--main-color);
+     border:1px solid var(--submit-color)!important;
      border-radius: 13px;
      cursor: pointer;
      font-size: 0.75em;
@@ -152,6 +153,19 @@ html,body {
  padding:8px;
   text-transform: uppercase;
   margin:0px 30%;
+  outline:none;
+ }
+ #btn_next {
+  background:var(--main-color);
+  color:white;
+  border:1px solid var(--main-color);
+  border-radius: 13px;
+  cursor: pointer;
+  font-size: 0.75em;
+ /*box-shadow: 2px 2px 2px black;*/
+  padding:8px;
+  text-transform: uppercase;
+  margin:10px 30%;
   outline:none;
  }
  #disp p{

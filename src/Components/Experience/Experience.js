@@ -16,6 +16,7 @@ class Experience extends React.Component {
         this.handleMouseLeave = this.handleMouseLeave.bind(this);
         this.handleClick = this.handleClick.bind(this);
         this.handleClickReset = this.handleClickReset.bind(this);
+        this.handleClickNext = this.handleClickNext.bind(this);
         this.chooseContinentInput = this.chooseExperienceInput.bind(this);
     }
     handleClickState(id){
@@ -36,6 +37,11 @@ class Experience extends React.Component {
     }
     handleClickReset(){
         this.props.chooseExperience('');
+    }
+    handleClickNext(){
+        window.scrollTo({
+            top: 2700,  
+          });
     }
     render(){
         return (
@@ -91,7 +97,8 @@ class Experience extends React.Component {
                     <button className="input-button"  id="btn_submit" onClick={this.handleClick} >Make Your Selection</button>
                     <button className="input-button"  id="btn_reset" onClick={this.handleClickReset} >Reset</button>
                     <div id="disp" >
-                        {this.props.selectedExperience && <p>You selected <span>{this.props.selectedExperience}</span> as your destination!</p>}
+                        {this.props.selectedExperience && (<div><p>You selected <span>{this.props.selectedExperience}</span> as your destination!</p><button className="next-button"  id="btn_next"
+                onClick={this.handleClickNext} >Next Step</button></div>)}
                     </div>
                 </div>
             </div>

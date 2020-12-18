@@ -6,6 +6,7 @@ class Places extends React.Component {
         super(props);
 
         this.handleClick = this.handleClick.bind(this);
+        this.handleClickNext = this.handleClickNext.bind(this);
     }
     componentDidMount(){
         this.props.getPlaces();
@@ -13,6 +14,11 @@ class Places extends React.Component {
     handleClick(){
         this.props.createPlacesArr();
         this.props.getPlaces();
+    }
+    handleClickNext(){
+        window.scrollBy({
+            top: 350,  
+          });
     }
     render(){
         return (
@@ -26,7 +32,8 @@ class Places extends React.Component {
                 <div className='Places_Select'>
                     <p>Alright! You have selected the city where you will start your next adventure. Visiting a different city in the world is fun, but don’t you want to know what type of places you can visit from there? That may reinforce your curiosity, but it can also make you rethink your selection. See below what places can be visited from there.</p>
                     <button className="input-button-v2"  id="btn_submit-v2" onClick={this.handleClick} >Show the Places to Explore</button>
-                    {this.props.placesComplete && <ul className='List_Places'>{this.props.placesComplete.map((place,i) => <li key={i}>{place[0]}<p>{place[1]}</p></li>)}</ul>}
+                    {this.props.placesComplete && (<div><ul className='List_Places'>{this.props.placesComplete.map((place,i) => <li key={i}>{place[0]}<p>{place[1]}</p></li>)}</ul><button className="next-button"  id="btn_next"
+                onClick={this.handleClickNext} >Next Step</button></div>)}
                 </div>
             </div>
         )
